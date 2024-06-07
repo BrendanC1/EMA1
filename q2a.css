@@ -3,11 +3,44 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    color: blue;
+h1,h2 {
+    color: black;
     margin: 0; 
-	flex: 1; 
-	text-align: center;
+    text-align: center;
+	flex-grow: 1;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 10px;
+    justify-self: start;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-button {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: end;
+}
+
+.nav {
+    display: flex;
+    align-items: center; 
+	justify-content: space-between;
+    padding: 40px; 
+	border: 10px solid powderblue;
 }
 
 form {
@@ -16,12 +49,16 @@ form {
     border-radius: 30px;
 }
 
-.header-container {
-    display: flex;
+.head-c {    
+	display: flex;
     align-items: center;
+    justify-content: space-between; /* Align title and button inline */
     padding: 20px;
 }
 
+
+
 button.yeh {
-    display: flex;
+    display: flex; 
+	justify-content: right;
 }
