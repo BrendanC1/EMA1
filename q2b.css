@@ -1,0 +1,177 @@
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+    margin: 0; 
+	font-size: 2.5em;
+	
+} 
+
+h2 {
+    color: black;
+    margin: 0; 
+	font-size: 2.1em;
+	
+}
+
+.head-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px; 
+	flex-wrap: wrap;
+}
+
+.head-c h1 {
+    flex: 1 1 100%; 
+    text-align: center;
+}
+
+.head-c button.yeh {
+    position: static;
+	margin-left:auto;
+    right: 20px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+	width: 100%; 
+	box-sizing: border-box; 
+
+}
+
+.left-buttons, .right-button {
+    display: flex;
+    gap: 10px;
+}
+
+.left-buttons {
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: Center; 
+}
+
+.right-button {
+    margin-left: auto;
+} 
+
+
+
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;  
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #C8C8C8;
+} 
+
+
+tr:nth-child(even) { 
+background-color: #E8E8E8; 
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; 
+	flex-wrap: wrap;
+    border: 10px solid black;  
+	border-radius: 15px;
+	gap: 10px; 
+	background-color: #FFFFFF;
+
+}
+
+.nav a {
+    margin: 5px; 
+	border-radius: 15px;
+}
+
+.form-container {
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    width: 95%;  
+}
+
+form {
+    background-color: #F;
+    padding: 10px;
+    border-radius: 10px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+button.yeh {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #FFFFFF;;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 8px; 
+	
+} 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .grid-container {
+        flex-direction: column;
+    }
+
+    .left-buttons, .right-button {
+        justify-content: center;
+        margin-bottom: 10px;
+        position: static; 
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
