@@ -1,11 +1,19 @@
 body {
-    background-color: #ADD8E7;
+    background-color: #F5F5F5;
     font-family: Arial, sans-serif;
 }
 
-h1, h2 {
+h1 {
     color: black;
     margin: 0; 
+	font-size: 2.5em;
+	
+} 
+
+h2 {
+    color: black;
+    margin: 0; 
+	font-size: 2.1em;
 	
 }
 
@@ -73,7 +81,12 @@ th, td {
 }
 
 th {
-    background-color: #e2e2e2;
+    background-color: #C8C8C8;
+} 
+
+
+tr:nth-child(even) { 
+background-color: #E8E8E8; 
 }
 
 .nav {
@@ -82,13 +95,16 @@ th {
     justify-content: space-between;
     padding: 40px; 
 	flex-wrap: wrap;
-    border: 10px solid powderblue; 
+    border: 10px solid black;  
+	border-radius: 15px;
 	gap: 10px; 
+	background-color: #FFFFFF;
 
 }
 
 .nav a {
     margin: 5px; 
+	border-radius: 15px;
 }
 
 .form-container {
@@ -99,7 +115,7 @@ th {
 }
 
 form {
-    background-color: #F0F0FF;
+    background-color: #F;
     padding: 10px;
     border-radius: 10px;
     width: 95%;
@@ -109,7 +125,7 @@ form {
 button.yeh {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
     border: 1px solid #ccc;
     cursor: pointer;
     border-radius: 8px;
@@ -118,10 +134,11 @@ button.yeh {
 button {
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;;
     border: 1px solid #ccc;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 8px; 
+	
 } 
 
 
